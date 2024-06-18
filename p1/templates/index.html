@@ -1,0 +1,49 @@
+<html>
+    <head> DP Quote
+    <script src="main.js" type="js"></script>    
+    </head>
+
+    <body>
+
+        <h2>Hello</h2>
+        <form action="" method="post">
+
+            <p>
+                {{form.lvlselect.label}}<br>
+                {{form.lvlselect}}
+
+            </p>
+            <hr>
+            <p>
+                {{form.loiselect.label}}<br>
+                {{form.loiselect}}
+            </p>
+            <hr>
+            <p>
+                {{form.ContNo.label}}<br>
+                {{form.ContNo}}
+            </p>
+            <hr>
+            <p>
+                {{form.BanNo.label}}<br>
+                {{form.BanNo}}
+            </p>
+            <hr>
+            <p>
+                {{form.WeightNo.label}}<br>
+                {{form.WeightNo}}
+            </p>
+            <hr>
+            <p>
+                {{form.submit()}}
+            </p>
+            {% if parse %}
+            <hr>
+            <p>
+                Your Final Charge is ${{moni}}
+            </p>
+            {% endif %}
+
+        </form>
+    </body>
+</html>

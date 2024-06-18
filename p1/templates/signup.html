@@ -1,0 +1,43 @@
+<html>
+    <head> Check Rate </head>
+
+    <body>
+
+        <h2>SignUp</h2>
+        <form action="" method="post">
+
+            <p>
+                {{form.bustype.label}}<br>
+                {{form.bustype}}
+
+            </p>
+            <hr>
+            <p>
+                {{form.irp.label}}<br>
+                {{form.irp}}
+            </p>
+            <hr>
+            <p>
+                {{form.time.label}}<br>
+                {{form.time}}
+            </p>
+            <hr>
+            <p>
+                {{form.countrys.label}}<br>
+                {{form.countrys}}
+            </p>
+            <hr>
+            <p>
+                {{form.submit()}}
+            </p>
+            {% if parse %}
+            <hr>
+            <p>
+
+                Your Final Cost is {{moni}}
+            </p>
+            {% endif %}
+
+        </form>
+    </body>
+</html>
